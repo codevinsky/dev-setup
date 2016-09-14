@@ -16,7 +16,7 @@ function runDots() {
             echo "Syncing the dev-setup repo to your local machine."
             echo "------------------------------"
             echo ""
-            cd ~ && curl -#L https://github.com/donnemartin/dev-setup/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,LICENSE}
+            cd ~ && curl -#L https://github.com/codevinsky/dev-setup/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,LICENSE}
         fi
         if [ $ARG == "osxprep" ] || [ $ARG == "all" ]; then
             # Run the osxprep.sh Script
@@ -40,6 +40,19 @@ function runDots() {
             echo ""
             ./brew.sh
         fi
+        if [ $ARG == "atom" ] || [$ARG == "all" ]; then
+          # Run the atom.sh Script
+          # For a full listing of installed packages, refer to
+          # the commented atom.sh source file directly and tweak it to
+          # suit your needs.
+          echo ""
+          echo "------------------------------"
+          echo "Installing Atom along with some common packages."
+          echo "This might awhile to complete, as some packages need to be installed from source."
+          echo "------------------------------"
+          echo ""
+          ./brew.sh
+        fi
         if [ $ARG == "osx" ] || [ $ARG == "all" ]; then
             # Run the osx.sh Script
             # I strongly suggest you read through the commented osx.sh
@@ -55,14 +68,7 @@ function runDots() {
             echo ""
             ./osx.sh
         fi
-        if [ $ARG == "pydata" ] || [ $ARG == "all" ]; then
-            # Run the pydata.sh Script
-            echo "------------------------------"
-            echo "Setting up Python data development environment."
-            echo "------------------------------"
-            echo ""
-            ./pydata.sh
-        fi
+
         if [ $ARG == "aws" ] || [ $ARG == "all" ]; then
             # Run the aws.sh Script
             echo "------------------------------"

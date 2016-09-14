@@ -93,6 +93,8 @@ brew cask install --appdir="~/Applications" iterm2
 
 # Development tool casks
 brew cask install --appdir="/Applications" atom
+./atom.sh
+
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
 brew cask install --appdir="/Applications" macdown
