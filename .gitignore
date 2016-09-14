@@ -25,3 +25,6 @@ Thumbs.db
 
 # Repo scratch directory
 scratch/
+
+# Dependencies
+node_modules/
