@@ -104,7 +104,7 @@ brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" 1password
 brew cask install --appdir="/Applications" caprine
-
+brew cask install --appdir="/Applications" hipchat
 #Remove comment to install LaTeX distribution MacTeX
 #brew cask install --appdir="/Applications" mactex
 
